@@ -27,3 +27,4 @@ Help and discussion will be available through the [#quickscript-competition](htt
 
 Once your script is ready, [submit your entry](https://github.com/Quickscript-Competiton/July2020entries/issues/new/choose)!
 
+###  Need some ideas to get started?  Try [IDEAS.md](IDEAS.md).
