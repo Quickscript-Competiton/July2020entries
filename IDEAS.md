@@ -17,7 +17,7 @@ Extracts a block of code out of its context and generates a function and a call 
 * Add Windows and/or Macos support to **[git](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/git.rkt)**.
 (maybe use [open-terminal](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/open-terminal.rkt) as a starting point?) 
 * Post the current selection to the Racket Slack. 
-(**[tweet](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/tweet.rkt)** is an example of using a web api \`
+(**[tweet](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/tweet.rkt)** is an example of using a web api)
 * Make a game? (maybe use `2htdp\universe\`?)
 
 # Have fun!  
