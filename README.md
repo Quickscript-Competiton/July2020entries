@@ -1,6 +1,6 @@
 # Quickscript Competition:
 
-[Quickscript](https://docs.racket-lang.org/quickscript)] is the scripting functionality behind the DrRacket `Scripts` menu:
+[Quickscript](https://docs.racket-lang.org/quickscript) is the scripting functionality behind the DrRacket `Scripts` menu:
 
 For the month of July we will be running a Quickscript competition: Write your own script and win prizes!
 There will be weekly winners in categories to be determined by the judges and overall awards at the end of the month. 
@@ -10,11 +10,9 @@ We follow Racket's and the ACM's [Code of Conduct](https://racket-lang.org/frien
 
 ## There will be amazing prizes!
 * An exclusive badge for your github profile recognising your efforts and contribution to the community. 
-* Socks/Mugs/Hats/Stickers with the Racket logo - to be announced on Racket Users mailing list/google group
+* Socks/Mugs/Hats/Stickers with the Racket logo - to be announced on Racket Users mailing list/google group.
 
 Scripts licensed appropriately will be included in a package for installation and universal fame.
-
-Entries at : https://github.com/Quickscript-Competiton/July2020entries/issues/new/choose
 
 End date: 31-July (publication in Racket-News marks the official start)
 
@@ -26,4 +24,6 @@ End date: 31-July (publication in Racket-News marks the official start)
 See quickscript-extra [[readme](https://github.com/Metaxal/quickscript-extra/blob/master/README.md)] [[scripts](https://github.com/Metaxal/quickscript-extra/tree/master/scripts)] for a bunch of useful and example scripts.
 
 Help and discussion will be available through the [#quickscript-competition](https://racket.slack.com/archives/C0168JZ2QUD) slack channel.
+
+Once your script is ready, [submit your entry](https://github.com/Quickscript-Competiton/July2020entries/issues/new/choose)!
 
