@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-we will use 
+Please enter the competition here:
 
 ## code
 URL for repo or gist, or paste below
