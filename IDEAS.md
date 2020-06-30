@@ -1,6 +1,6 @@
 # Ideas
 
-Need some ideas? Check out some example from quickscript-extra, and some starter ideas below.
+Need some ideas? Check out some examples from quickscript-extra, and some starter ideas below.
 
 ## Some examples
 
