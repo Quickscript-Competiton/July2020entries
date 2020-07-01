@@ -14,7 +14,7 @@ We follow Racket's and the ACM's [Code of Conduct](https://racket-lang.org/frien
 
 Scripts licensed appropriately will be included in a package for installation and universal fame.
 
-End date: 31-July (publication in Racket-News marks the official start)
+End date: 31-July
 
 
 ## Getting started
