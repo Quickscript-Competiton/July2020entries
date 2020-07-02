@@ -1,13 +1,6 @@
+## Ideas
+
 Need some ideas? Check out some examples from [quickscript-extra](https://github.com/Metaxal/quickscript-extra), and some starter ideas below.
-
-## Some existing examples
-
-* **[abstract-variable](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/abstract-variable.rkt)**: 
-Create a variable from the selected expression [video](https://www.youtube.com/watch?v=qgjAZd4eBBY)
-* **[extract-function](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/extract-function.rkt)**: 
-Extracts a block of code out of its context and generates a function and a call [video](https://www.youtube.com/watch?v=XinMxDLZ7Zw)
-* **[indent-table](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/indent-table.rkt)**: Indent rows on double-space-separated colums
-  [video](https://www.youtube.com/watch?v=KJjVREsgnvA)
 
 ## Ideas 
 
@@ -29,6 +22,15 @@ Extracts a block of code out of its context and generates a function and a call 
 
 # Win Prizes and the *Admiration of your peers*.
 
+## Some existing examples
+
+* **[abstract-variable](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/abstract-variable.rkt)**: 
+Create a variable from the selected expression [video](https://www.youtube.com/watch?v=qgjAZd4eBBY)
+* **[extract-function](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/extract-function.rkt)**: 
+Extracts a block of code out of its context and generates a function and a call [video](https://www.youtube.com/watch?v=XinMxDLZ7Zw)
+* **[indent-table](https://github.com/Metaxal/quickscript-extra/blob/master/scripts/indent-table.rkt)**: Indent rows on double-space-separated colums
+  [video](https://www.youtube.com/watch?v=KJjVREsgnvA)
+  
 
 ### Done
 
