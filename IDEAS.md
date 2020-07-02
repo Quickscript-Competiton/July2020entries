@@ -18,6 +18,8 @@ Need some ideas? Check out some examples from [quickscript-extra](https://github
 
 **Looking for more ideas?** What about porting some of [emacs scripts](https://github.com/emacs-tw/awesome-emacs) and [vim scripts](https://github.com/akrawchyk/awesome-vim)?
 
+When you have an idea ([Getting started for the impatient](https://docs.racket-lang.org/quickscript/#%28part._.Make_your_own_script__.First_simple_example%29) is a good starting point) 
+
 # Have fun!  
 
 # Win Prizes and the *Admiration of your peers*.
@@ -34,6 +36,4 @@ Extracts a block of code out of its context and generates a function and a call 
 
 ### Done
 
-* **Secret-message** Make a ROT13 encoder/decoder. ([Getting started for the impatient](https://docs.racket-lang.org/quickscript/#%28part._.Make_your_own_script__.First_simple_example%29) is a good starting point)
-
-This was the first entry!
+* **Secret-message** Make a ROT13 encoder/decoder. - This was the first entry!
