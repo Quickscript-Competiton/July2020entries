@@ -1,6 +1,6 @@
 # Quickscript Competition:
 
-[Quickscript](https://docs.racket-lang.org/quickscript) is the scripting functionality behind the DrRacket `Scripts` menu:
+[Quickscript](https://www.cs.utah.edu/plt/snapshots/current/doc/quickscript/index.html) is the scripting functionality behind the DrRacket `Scripts` menu:
 
 For the month of July we will be running a Quickscript competition: Write your own script and win prizes!
 There will be weekly winners in categories to be determined by the judges and overall awards at the end of the month. 
@@ -19,7 +19,7 @@ End date: 31-July
 
 ## Getting started
 
-[Getting started for the impatient](https://docs.racket-lang.org/quickscript/#%28part._.Make_your_own_script__.First_simple_example%29) in DrRacket.
+[Getting started for the impatient](https://www.cs.utah.edu/plt/snapshots/current/doc/quickscript/index.html#%28part._.Make_your_own_script__.First_simple_example%29) in DrRacket.
 
 See quickscript-extra [[readme](https://github.com/Metaxal/quickscript-extra/blob/master/README.md)] [[scripts](https://github.com/Metaxal/quickscript-extra/tree/master/scripts)] for a bunch of useful and example scripts.
 
