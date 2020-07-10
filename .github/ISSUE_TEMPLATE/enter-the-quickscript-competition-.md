@@ -1,7 +1,7 @@
 ---
 name: 'Enter the Quickscript competition '
 about: Use this form to submit your entry
-title: "[entry]"
+title: "[entry - name/description of script]"
 labels: entry, week 2
 assignees: ''
 
@@ -10,11 +10,9 @@ assignees: ''
 Please enter the competition here:
 
 ## code
-URL for repo or gist, or paste below
+[URL for gist, e.g. https://gist.github.com/myusername/ec5b375965...]
 
-```
 
-```
 ## Licence 
 [Your choice: We suggest using the same as Racket: Apache 2/MIT ]
 
