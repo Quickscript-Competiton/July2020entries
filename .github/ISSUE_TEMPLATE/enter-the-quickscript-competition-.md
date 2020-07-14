@@ -10,7 +10,7 @@ assignees: ''
 Please enter the competition here:
 
 ## code
-[URL for gist, e.g. https://gist.github.com/myusername/ec5b375965...]
+[URL for [github gist](https://gist.github.com) or [gitlab snippet](https://gitlab.com/snippets) or [Racket paste](http://pasterack.org), e.g. https://gist.github.com/myusername/ec5b375965... ]
 
 
 ## Licence 
