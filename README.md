@@ -32,6 +32,12 @@ See quickscript-extra [[readme](https://github.com/Metaxal/quickscript-extra/blo
 
 Help and discussion will be available through the [#quickscript-competition](https://racket.slack.com/archives/C0168JZ2QUD) slack channel.
 
+
+## how to enter
 Once your script is ready, [submit your entry](https://github.com/Quickscript-Competiton/July2020entries/issues/new/choose)!
+
+1. create a [gist](https://docs.github.com/en/github/writing-on-github/creating-gists) or [snippet](https://gitlab.com/snippets/new) or [paste](http://pasterack.org)rack of your script
+1. [submit your entry](https://github.com/Quickscript-Competiton/July2020entries/issues/new/choose)
+
 
 ###  Need some [ideas to get started](IDEAS.md)?
