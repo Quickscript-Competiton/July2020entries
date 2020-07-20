@@ -10,7 +10,14 @@ We follow Racket's and the ACM's [Code of Conduct](https://racket-lang.org/frien
 
 ## There will be amazing prizes!
 * An exclusive badge for your github profile recognising your efforts and contribution to the community. 
-* Socks/Mugs/Hats/Stickers with the Racket logo - to be announced on Racket Users mailing list/google group.
+* If you participate once, you get stickers,
+* if you participate twice time, you get also a mug,
+* if you participate three times, you get also a t-shirt
+
+(while stocks last. Note - prizes still available)
+You can participate more than once.
+
+Prizes to be announced on Racket Users mailing list/google group.
 
 Scripts licensed appropriately will be included in a package for installation and universal fame.
 
