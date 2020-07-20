@@ -9,7 +9,7 @@ We follow Racket's and the ACM's [Code of Conduct](https://racket-lang.org/frien
 
 
 ## There will be amazing prizes!
-* An exclusive badge for your github profile recognising your efforts and contribution to the community. 
+* An exclusive badge for your github profile recognising your efforts and contribution to the community. (you must [enable it](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/publicizing-or-hiding-organization-membership) )
 * If you participate once, you get stickers,
 * if you participate twice time, you get also a mug,
 * if you participate three times, you get also a t-shirt
