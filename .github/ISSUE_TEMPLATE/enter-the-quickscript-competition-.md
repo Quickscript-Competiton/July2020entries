@@ -2,7 +2,7 @@
 name: 'Enter the Quickscript competition '
 about: Use this form to submit your entry
 title: "[entry - name/description of script]"
-labels: entry, week 3
+labels: entry, week 4
 assignees: ''
 
 ---
