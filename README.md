@@ -23,7 +23,8 @@ Prizes to be announced on Racket Users mailing list/google group.
 
 Scripts licensed appropriately will be included in a package for installation and universal fame.
 
-# End date: 31-July - but that is still plenty of time!
+# Deadline Extended till Tuesday Morning 4 Aug (uk time)
+- still plenty of time!
 
 ## Getting started
 
