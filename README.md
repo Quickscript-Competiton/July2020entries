@@ -1,5 +1,7 @@
 # Quickscript Competition:
 
+NOTE: Unofficial event run by a Racket user (@spdegabrielle). 
+
 [Quickscript](https://www.cs.utah.edu/plt/snapshots/current/doc/quickscript/index.html) is the scripting functionality behind the DrRacket `Scripts` menu:
 
 For the month of July we will be running a Quickscript competition: Write your own script and win prizes!
