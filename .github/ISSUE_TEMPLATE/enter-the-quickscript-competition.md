@@ -1,9 +1,9 @@
 ---
-name: 'Enter the Quickscript competition '
-about: Use this form to submit your entry
+name: 'COMPETITION CLOSED: Enter the 2020 Quickscript competition '
+about: COMPETITION CLOSED: form to submit entries
 title: "[entry - name/description of script]"
-labels: entry, week 4
-assignees: ''
+labels: entry
+assignees: 'spdegabrielle'
 
 ---
 
