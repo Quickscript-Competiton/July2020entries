@@ -1,9 +1,9 @@
 ---
-name: 'COMPETITION CLOSED: Enter the 2020 Quickscript competition '
-about: COMPETITION CLOSED: form to submit entries
+name: 'COMPETITION CLOSED Enter the 2020 Quickscript competition'
+about: COMPETITION CLOSED form to submit entries
 title: "[entry - name/description of script]"
 labels: entry
-assignees: 'spdegabrielle'
+assignees: ''
 
 ---
 
