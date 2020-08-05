@@ -46,6 +46,8 @@
 ;; phases :: (listof integer?)
 (define phases '())
 
+(define-logger fishy-completion)
+
 ;; make-id/phase-list :: (listof identifier?) integer? -> (listof ids/c)
 (define (make-id/phase-list xs phase)
   (for/list ([x (in-list xs)]) (cons x phase)))
@@ -78,10 +80,13 @@
 
     [(quote x)
      #:when (eq? (syntax-e #'x) magic-word)
-     (set! locals
-           (append (for/list ([id (in-list ids)] #:when (visible? (car id)))
-                     (cons (~s (syntax-e (car id))) (cdr id)))
-                   locals))
+
+     (define the-candidates
+       (for/list ([id (in-list ids)] #:when (visible? (car id)))
+         (cons (~s (syntax-e (car id))) (cdr id))))
+     (log-fishy-completion-debug "at phase: ~s" phase)
+     (log-fishy-completion-debug "found candidates: ~s" the-candidates)
+     (set! locals (append the-candidates locals))
      (set! phases (cons phase phases))]
 
     [(module _ _ (#%plain-module-begin form ...))
@@ -127,12 +132,19 @@
               stx
               phase)]))
 
-;; find-candidates :: syntax? -> (listof identifier?)
-(define (find-candidates form)
+;; find-candidates :: syntax? (or/c path? #f) -> (listof identifier?)
+(define (find-candidates form dir)
   (define stx
-    (with-handlers ([exn:fail? (λ (_) #f)])
+    (with-handlers ([exn:fail? (λ (ex)
+                                 (log-fishy-completion-warning
+                                  "compile-time error: ~s"
+                                  ex)
+                                 #f)])
       (parameterize ([current-namespace (make-base-namespace)])
-        (expand form))))
+        (if dir
+            (parameterize ([current-directory dir])
+              (expand form))
+            (expand form)))))
   (cond
     [stx
      (set! locals '())
@@ -167,7 +179,13 @@
                                    this-syntax
                                    this-syntax)]
            [x:idable
-            #:when (and (syntax-source #'x)
+            #:when (and (log-fishy-completion-debug
+                         "found id: ~s at ~a with span ~a"
+                         (syntax-e stx)
+                         (syntax-position stx)
+                         (syntax-span stx))
+                        ;; the above should return void? which is truthy
+                        (syntax-source #'x)
                         (syntax-position #'x)
                         (syntax-span #'x)
                         (equal? (syntax-source #'x) (syntax-source top-stx))
@@ -200,17 +218,20 @@
     (parameterize ([read-accept-reader #t])
       (read-syntax (string->path "dummy") p))))
 
-;; query :: exact-positive-integer? string? ->
+;; query :: exact-positive-integer? string? (or/c path? #f) ->
 ;;          (either (values #f #f '()) (values string? string? (listof string?)))
-(define (query position code-str)
-  (with-cache (list position code-str)
+(define (query position code-str dir)
+  (log-fishy-completion-info "looking for position: ~a" position)
+  (with-cache (list position code-str dir)
     (define orig-stx (my-read code-str))
     (cond
       [orig-stx
+       (log-fishy-completion-info "read successfully")
        (set! the-id #f)
        (define replaced (replace orig-stx position (list 'quote magic-word)))
        (cond
          [the-id
+          (log-fishy-completion-info "found an id at the indicated position")
           (define as-string (~s (syntax-e the-id)))
           (define as-list (string->list (if (= (+ 2 (string-length as-string))
                                                (syntax-span the-id))
@@ -220,7 +241,7 @@
             (split-at as-list (- position (syntax-position the-id))))
           (define left* (list->string left))
           (define right* (list->string right))
-          (define candidates (for/list ([x (find-candidates replaced)]
+          (define candidates (for/list ([x (find-candidates replaced dir)]
                                         #:when (string-prefix? x left*))
                                x))
           (values left* right* (sort candidates string<?))]
@@ -251,11 +272,15 @@
   #:shortcut #\m
   #:shortcut-prefix (ctl)
   #:persistent
-  (λ (_sel #:editor ed)
+  (λ (_sel #:editor ed #:definitions d)
     (define pos (send ed get-end-position))
     (define txt (send ed get-text))
+    (define fname (send d get-filename))
+    (define dir (and fname
+                     (let-values ([(base name must-be-dir?) (split-path fname)])
+                       (and (path? base) base))))
     (define-values (left right matches)
-      (query (add1 pos) txt))
+      (query (add1 pos) txt dir))
     (unless (empty? matches)
       (define mems (member (string-append left right) matches))
       (define str
@@ -269,6 +294,6 @@
         (send ed insert right*)
         (send ed set-position pos)
         (send ed end-edit-sequence)
-        (set! cached (cons (list (add1 pos) (send ed get-text))
+        (set! cached (cons (list (add1 pos) (send ed get-text) dir)
                            (list left right* matches)))))
     #f))
