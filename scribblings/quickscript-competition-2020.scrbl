@@ -1,9 +1,12 @@
 #lang scribble/manual
 @(require racket/runtime-path
-         racket/dict
-         racket/path
-         racket/match
-         quickscript/base)
+          racket/dict
+          racket/path
+          racket/match
+          quickscript/base)
+
+@; From: https://github.com/Metaxal/quickscript-extra
+@; License: MIT
 
 @;TODO: How to have video links in script-help-string? Use scribble/manual too?
 
