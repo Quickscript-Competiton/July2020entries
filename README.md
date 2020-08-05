@@ -1,4 +1,4 @@
-# Quickscript Competition:
+# Quickscript Competition 2020: COMPETITION CLOSED
 
 NOTE: Unofficial event run by a Racket user (@spdegabrielle). 
 
