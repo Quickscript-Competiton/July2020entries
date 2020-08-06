@@ -43,7 +43,7 @@
     #f))
 
 (define-script canvas-course-site
-  #:label "Canvas-course-site"
+  #:label "Canvas-course-site (restricted access)"
   #:menu-path ("&CS111")
   #:help-string "Link to F20 CS 111 Canvas course web site" 
   (λ (selection)
