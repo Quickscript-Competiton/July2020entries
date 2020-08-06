@@ -2,7 +2,7 @@
 (require quickscript racket/string)
 
 ;;; Author: Alex Harsányi https://github.com/alex-hhh
-;;; License: MIT
+;;; License: [MIT](http://opensource.org/licenses/MIT)
 ;;; From: https://github.com/Quickscript-Competiton/July2020entries/issues/3
 
 (script-help-string "Formats the selected text to wrap around a 78 character limit.

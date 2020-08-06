@@ -5,7 +5,7 @@
 
 ;; Author: Robby Findler https://github.com/rfindler
 ;; http://racket-lang.org/
-;; License: CC-BY https://creativecommons.org/licenses/by/4.0/
+;; License: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 ;; From: https://github.com/Quickscript-Competiton/July2020entries/issues/16
 
 (script-help-string "visit url at insertion point")

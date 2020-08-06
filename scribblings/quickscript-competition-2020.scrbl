@@ -6,9 +6,7 @@
           quickscript/base)
 
 @; From: https://github.com/Metaxal/quickscript-extra
-@; License: MIT
-
-@;TODO: How to have video links in script-help-string? Use scribble/manual too?
+@; License: [MIT](http://opensource.org/licenses/MIT)
 
 @(define-runtime-path scripts-path "../scripts")
 
@@ -27,6 +25,8 @@
 @title{Scripts from the Quickscript Competition July 2020}
 
 This is a collection of scripts that result from the @(hyperlink "https://github.com/Metaxal/quickscript" "Quickscript") Competition July 2020.
+
+Each script has its own license (either MIT, Apache 2.0, both, or CC-BY).
 
 @section{Installation}
 

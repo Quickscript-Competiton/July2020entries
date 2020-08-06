@@ -1,7 +1,7 @@
 #lang racket/base
 
 ;;; Author: Laurent Orseau https://github.com/Metaxal
-;;; License: Apache2.0
+;;; License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 ;;; From:https://github.com/Quickscript-Competiton/July2020entries/issues/10
 
 (require quickscript

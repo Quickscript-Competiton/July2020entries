@@ -27,7 +27,8 @@
 ;; that line ending removed, moving the closing paren a line up.
 
 ;;; Author: Shriram Krishnamurthi https://github.com/shriram
-;;; License: Apache2.0/MIT
+;;; License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) or
+;;;          [MIT license](http://opensource.org/licenses/MIT) at your option.
 ;;; From: https://github.com/Quickscript-Competiton/July2020entries/issues/18
 
 

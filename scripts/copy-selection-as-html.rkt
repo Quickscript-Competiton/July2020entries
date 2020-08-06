@@ -8,7 +8,7 @@
 ; COPY SELECTION AS HTML
 ; Author: Andre Alves Garzia (contact@andregarzia.com)
 ; Date: 07-2020
-; License: MIT
+; License: [MIT](http://opensource.org/licenses/MIT)
 ; From: https://github.com/Quickscript-Competiton/July2020entries/issues/14
 ;
 ; This quickscript copies the selection to the clipboard as

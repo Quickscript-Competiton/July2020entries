@@ -2,7 +2,8 @@
 (require quickscript)
 
 ;;; Author: Stephen De Gabrielle https://github.com/spdegabrielle
-;;; License: MIT/Apache2.0
+;;; License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) or
+;;;          [MIT license](http://opensource.org/licenses/MIT) at your option.
 ;;; From: https://github.com/Quickscript-Competiton/July2020entries/issues/7
 
 (script-help-string "Eyeballs are following you.")

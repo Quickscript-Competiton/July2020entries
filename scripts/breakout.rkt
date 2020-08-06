@@ -10,7 +10,7 @@
 ; Jens Axel Søgaard, Feb 2014, https://github.com/soegaard
 ;     https://github.com/soegaard/breakout
 
-;;; License: MIT
+;;; License: [MIT](http://opensource.org/licenses/MIT)
 ;;; From: https://github.com/Quickscript-Competiton/July2020entries/issues/4
 
 ;;; References

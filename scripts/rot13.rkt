@@ -8,7 +8,8 @@ github: @Karrq
 
 This is a rot13 cipher implementation for quickscript.
 
-License: MIT/Apache 2
+License: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0) or
+         [MIT license](http://opensource.org/licenses/MIT) at your option.
 From: https://github.com/Quickscript-Competiton/July2020entries/issues/1
 
 Made for July 2020 Quickscript Competition
