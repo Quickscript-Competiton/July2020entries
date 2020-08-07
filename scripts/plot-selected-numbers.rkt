@@ -9,16 +9,32 @@
          plot
          racket/string
          racket/list
-         racket/class)
+         racket/class
+         data/gvector)
 
 (script-help-string "Takes a selection of numbers which are separated by whitespaces and plots them")
 
+(define selections-vec (make-gvector))
+
 (define-script plot
-  #:label "Plot"
+  #:label "Plot (reuse frame)"
   #:menu-path ("Sele&ction")
+  #:persistent
   #:output-to #f
   (λ (selection)
     (make-plot selection)))
+
+(define-script clear-plot
+  #:label "Plot (new frame)"
+  #:menu-path ("Sele&ction")
+  #:persistent
+  #:output-to #f
+  (λ (selection)
+    (set! fr #f) ; but don't close the old frame
+    (set! selections-vec (make-gvector))
+    (make-plot selection)))
+
+(define fr #f)
 
 (define (make-plot str)
   ;; split the string into a list of numbers
@@ -28,6 +44,18 @@
          [x-lst (build-list (length num-lst)(λ (x) x))]
          ;; combine the x values with the y values
          [plot-lst (map vector x-lst num-lst)])
+    ;; add to persistent collection
+    (gvector-add! selections-vec plot-lst)
     ;; graph them
-    (define fr (plot-frame (lines plot-lst) #:x-label "" #:y-label "" ))
+    (when fr (send fr show #f))
+    (set! fr (plot-frame
+                (for/list ([i selections-vec]
+                           [j (in-range (gvector-count selections-vec))])
+                  (lines i #:color j))
+                #:x-label "" #:y-label "" ))
     (send fr show #t)))
+
+; 1 3 3 6 6 3 3 1
+; 1 2 4 4 2 1 1 2 4 8 8 4 2 1 
+
+
