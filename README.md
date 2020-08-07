@@ -4,6 +4,9 @@ This is a collection of scripts that result from the
 [Quickscript](https://github.com/Metaxal/quickscript) Competition July
 2020.
 
+Each script has its own license (either MIT, Apache 2.0, both, or
+CC-BY).
+
 ## 1. Installation
 
 In DrRacket, in `File|Package manager|Source`, enter
@@ -76,9 +79,9 @@ The following scripts are included.
 
 ## 3. Customizing
 
-If the default keybindings, names or submenus are not to you taste, they
-can be fully customized using Quickscript’s [shadow
+If the default keybindings, names or submenus are not to your taste,
+they can be fully customized using Quickscript’s [shadow
 scripts](https://docs.racket-lang.org/quickscript/index.html?q=quickscripts#%28part._.Shadow_scripts%29).
 
-Scripts can also be selectively deactivated altogether from the library
+Scripts can also be selectively deactivated from the library
 \(`Scripts|Manage scripts|Library`).
