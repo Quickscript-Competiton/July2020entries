@@ -56,10 +56,10 @@ The following scripts are included.
 
 @section{Customizing}
 
-If the default keybindings, names or submenus are not to you taste, they can be fully customized
+If the default keybindings, names or submenus are not to your taste, they can be fully customized
 using Quickscript's
 @hyperlink["https://docs.racket-lang.org/quickscript/index.html?q=quickscripts#%28part._.Shadow_scripts%29"]{shadow scripts}.
 
-Scripts can also be selectively deactivated altogether from the library
+Scripts can also be selectively deactivated from the library
 (@tt{Scripts|Manage scripts|Library}).
 
