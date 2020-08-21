@@ -3,7 +3,8 @@
 (define pkg-desc "Scripts of the Quickscript Competition in July 2020")
 (define version "0.0")
 (define pkg-authors '(orseau spdegabrielle))
-(define deps '("base"
+(define deps '("data-lib"
+               "base"
                "drracket"
                "gui-lib"
                "htdp-lib"
