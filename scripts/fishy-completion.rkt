@@ -270,6 +270,7 @@
 
 (define-script fishy-completion
   #:label "Fishy completion v2"
+  #:menu-path ("Re&factor")
   #:shortcut #\m
   #:shortcut-prefix (ctl)
   #:persistent
