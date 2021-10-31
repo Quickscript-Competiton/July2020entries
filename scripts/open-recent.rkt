@@ -4,6 +4,7 @@
          racket/class
          racket/list
          quickscript
+         quickscript/utils
          framework
          search-list-box)
 
@@ -14,30 +15,6 @@
 ;;; NOTICE: The package `search-list-box` must be installed first!
 
 (script-help-string "Open a recent file (dialog uses a search-list-box)")
-
-;; Opens a file in a new tab and returns whether opening was successful.
-;; Checks if the file exists and displays a message box otherwise and returns #f.
-;; Opens the file in the first tab if drracket is still-untouched?
-;; Changes to the corresponding tab if the file is already open.
-(define (smart-open-file drfr f)
-  (cond
-    [(not (file-exists? f))
-     (message-box "Error"
-                  (format "File not found: ~a" f)
-                  drfr
-                  '(ok stop))
-     #f]
-    [(send drfr still-untouched?)
-     (send drfr change-to-file f)
-     #t]
-    [(send drfr find-matching-tab f)
-     =>
-     (λ (tab)
-       (send drfr change-to-tab tab)
-       #t)]
-    [else
-     (send drfr open-in-new-tab f)
-     #t]))
 
 (define-script open-recent
   #:label "&Open recent"
