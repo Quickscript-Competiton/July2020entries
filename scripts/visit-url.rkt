@@ -1,6 +1,9 @@
-#lang racket
+#lang racket/base
 
-(require quickscript racket/gui/base browser/external)
+(require quickscript
+         racket/gui/base
+         browser/external
+         racket/class)
 (module+ test (require rackunit))
 
 ;; Author: Robby Findler https://github.com/rfindler
