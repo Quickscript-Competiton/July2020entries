@@ -44,7 +44,8 @@
       (vector2d-set! mat row col c))
 
     ;; Save syncheck state and deactivate it (temporarily).
-    (preferences:set-default 'drracket:online-compilation-default-on #t boolean?)
+    (unless (preferences:default-set? 'drracket:online-compilation-default-on)
+      (preferences:set-default 'drracket:online-compilation-default-on #t boolean?))
     (define syncheck? (preferences:get 'drracket:online-compilation-default-on))
     (preferences:set 'drracket:online-compilation-default-on #f)
     
