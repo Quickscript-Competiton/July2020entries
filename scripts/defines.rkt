@@ -86,10 +86,13 @@
                                                  px))))
                        (or (not px)
                            (regexp-match px lbl))))]
-                  [width 600] [height 400]))
+                  [width 600] [height 400]
+                  [show? #f]))
 
     (define slb (send fr get-search-list-box))
     (send slb set-text selection)
+    (send fr center)
+    (send fr show #t)
     
     #f))
 
