@@ -27,6 +27,7 @@
            [width 600] [height 400]
            [contents recent]
            [key (λ (c) (path->string (first c)))]
+           [filter word-filter]
            [callback
             (λ (sel str content)
               (when content
